@@ -1,0 +1,148 @@
+/*
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    width:100%;
+    height: 100vh;
+}
+*/
+
+body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body .letter-wrapper {
+    border: 1pt solid rgb(246, 234, 234);
+    width: 210mm;
+    height: 297mm;
+    background-color:rgb(248, 247, 244);
+    position: relative;
+    overflow: hidden;
+    background-image: url("./image/watermarkimg.jpg");
+    padding: 2em 4em;
+  }
+
+body .letter-wrapper .rect1{
+    position: absolute;
+    bottom: 0;
+    left: -40px;
+    height: 17mm;
+    width: 182mm;
+    transform: skewX(-54deg);
+    background-color: rgb(44, 42, 42);
+}
+body .letter-wrapper .curve{
+    border-bottom-right-radius: 300px;
+    position: absolute;
+    right: -45px;
+    bottom: -167px;
+    height: 49mm;
+    width: 151mm;
+    background-color: aqua;
+    border-top-right-radius: 600px;
+    transform: rotate(-39deg);
+}
+
+body .letter-wrapper .letter-content .letter-body {
+    position: absolute;
+    left: 0mm;
+    top: 45mm;
+    width: 100%;
+    height: 20mm;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body .letter-wrapper .letter-content header .letter-org-logo img{
+    /* margin-top: 2mm;
+    margin-left: 15mm; */
+    /* width: 20%;
+    height: 30%;
+    background-color: rgb(239, 233, 217); */
+    height: 100px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+    /* line-height: 60px; */
+    /* margin-right: 16mm; */
+    font-size: 20px;
+}
+.container i{
+    color: rgb(129, 235, 134);
+    
+}
+
+
+body .letter-wrapper .letter-content .letter-body .letter-body-to{
+    position: absolute;
+  left: 15mm;
+  top: 25mm;
+  width: 70mm;
+  height: 35mm;
+  font-weight: bold;
+  font-size: 13pt;
+  margin: 0mm;
+}
+body .letter-wrapper .letter-content .letter-body-messsage{
+    position: absolute;
+    left: 0mm;
+    top: 50mm;
+    width: auto;
+    height: 115mm;
+    margin-left: 15mm;
+    margin-right: 15mm;
+}
+body .letter-wrapper .letter-content .letter-body-messsage p{
+    font-size: 13pt;
+    text-indent: 15mm;
+    font-family: 'Times New Roman', Times, serif;
+    overflow: auto;
+    text-align: justify;
+}
+body .letter-wrapper .letter-content .letter-body-sign{
+    position: absolute;
+    left: 0mm;
+    top: 195mm;
+    width: auto;
+    height: auto;
+    margin-left: 15mm;
+    margin-right: 15mm;
+    font-size: 12pt;
+    font-weight: bold;
+}
+body .letter-wrapper .letter-content .letter-body-sign img{
+    position: absolute;
+    bottom: 15mm;
+    height: 25mm;
+    width: 25mm;
+    background-color: aliceblue;
+}
+body .letter-wrapper .letter-content .letter-body-sign p{
+    margin: 0mm;
+    font-size: 15pt;
+    font-weight: normal;
+}
+
+
+.margin-top{
+    margin-top: -20px;
+}
+

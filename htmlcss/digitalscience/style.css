@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    width:100%;
+    height: 100vh;
+}
+
+.Tourist{
+    display: flex;
+    flex-direction: row;
+}
+
+h3{
+    background-color: rgb(135, 231, 239);
+    border-radius: 5px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+h2{
+    background-color: rgb(232, 177, 177);
+    font-size: small;
+    border-radius: 5px;
+}
+.ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1.7rem;
+    margin-left: 10px;
+}
+.infotouristPune{
+    max-width: 85%;
+    margin-left: 6mm;
+    flex-direction: row;
+    color: rgb(19, 18, 18);
+}
+
+.infotouristPune img{
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    border-radius: 10px;
+    height: 105px;
+    width:205px;
+}
+.image{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    padding: 20px;
+}
+.Tourist-place{
+    margin-left: 0%;
+    left: 20mm;
+    gap: 15px;
+}
